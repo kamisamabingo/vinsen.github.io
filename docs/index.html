@@ -12,12 +12,19 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
+      // routerMode: 'history',
       loadSidebar:  'sidebar.md',
       alias: {
-        '/zh-cn/': './zh-cn/fcode.md'
-      }
+        '/zh-cn/': './zh-cn/flutter/fcode.md'
+      },
+      loadNavbar:  'navbar.md',
+      search: {
+        placeholder: '输入关键字搜索',
+        noData: '搜索不到相应结果^_^',
+      },
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
