@@ -2,6 +2,7 @@
 
   - [代码规范](/zh-cn/flutter/fcode.md)
   - [上传自己的插件包(英文)](/zh-cn/flutter/fpypackage.md)
+  - [安卓签名打包](/zh-cn/flutter/fapk.md)
 
 - Ionic开发文档
 
