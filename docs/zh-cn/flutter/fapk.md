@@ -71,12 +71,12 @@ storeFile=<location of the key store file, such as /Users/<user name>/key.jks>  
 
 ```
 ```
-    // 添加后 使用key.properties文件中的密钥库信息：
+    // 添加后 使用key.properties文件中的密钥库信息
    signingConfigs {
        release {
            keyAlias keystoreProperties['keyAlias']
            keyPassword keystoreProperties['keyPassword']
-           storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+           storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) :null
            storePassword keystoreProperties['storePassword']
        }
    }
@@ -89,3 +89,8 @@ storeFile=<location of the key store file, such as /Users/<user name>/key.jks>  
 ```
 
 ## 4.走了上面三步，你在编译的时候就会自动签名啦
+
+```
+flutter build apk --split-per-abi
+
+```
